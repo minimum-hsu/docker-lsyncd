@@ -9,7 +9,7 @@ RUN apt-get update \
   && cmake -DCMAKE_INSTALL_PREFIX=/usr/local \
   && make \
   && make install \
-  && apt-get remove -y git cmake build-essential liblua5.2-dev \
+  && apt-get remove -y git cmake build-essential \
   && apt-get autoremove -y \
   && apt-get autoclean \
   && mkdir /root/.ssh
