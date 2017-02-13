@@ -14,4 +14,4 @@ RUN apt-get update \
   && apt-get autoclean \
   && mkdir /root/.ssh
 
-CMD lsyncd -insist -nodaemon -log all $CONFIG
+CMD lsyncd -insist -nodaemon -log scarce $CONFIG
